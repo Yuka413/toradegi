@@ -1,7 +1,16 @@
 // テキストカラー
-$text-color-d: #222222;
+$text-color-d: #222;
 $text-color-m: #6b6b6b;
 $text-color-l:#ebebeb;
 
 // フォント
 $ff-base: "Noto Sans JP", serif;
+
+// ブレイクポイント
+$breakpoints :(
+    sm: "screen and (min-width: 500px)",
+    md: "screen and (min-width: 768px)",
+    lg: "screen and (min-width: 950px)",
+    xl: "screen and (min-width: 1230px)",
+    ll: "screen and (min-width: 1320px)",
+)
