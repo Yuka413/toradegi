@@ -15,7 +15,8 @@ $(".l-header__drawer-menu").on("click", function () {
 });
 // ドロワーメニュー開閉ここまで
 
-//  headerスクロールで切り替わる
+
+//  headerスクロールで切り替わるここから
 $(window).on("scroll", function () {
   const scrollY = $(this).scrollTop();
   if ($(window).scrollTop() > 50) {
@@ -36,3 +37,16 @@ $(window).on("scroll", function () {
     $(".l-header__logo-pc-svg path").css("fill", "#222");
   }
 });
+// headerスクロールで切り替わるここまで
+
+
+// ハートクリック切り替えここから
+$('.c-card__favorite-before').on('click', function(){
+  $('.c-card__favorite-before').addClass('is-inactive');
+  $('.c-card__favorite-after').addClass('is-active');
+})
+$('.c-card__favorite-after').on('click', function(){
+  $('.c-card__favorite-before').removeClass('is-inactive');
+  $('.c-card__favorite-after').removeClass('is-active');
+})
+// ハートクリック切り替えここまで

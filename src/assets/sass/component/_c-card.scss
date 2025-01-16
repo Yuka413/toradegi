@@ -1,0 +1,168 @@
+@use "../global/" as global;
+
+.c-card {
+  display: inline-block;
+  width: 312px;
+  background: #ebebeb;
+  border-radius: 25px;
+  padding-inline: 19px;
+  padding-block: 30px;
+}
+
+.c-card__inner {
+}
+
+.c-card__tags {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.c-card__tag {
+  color: global.$text-color-l;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 7px 12px;
+  border-radius: 19.5px;
+  width: fit-content;
+}
+
+.c-card__image {
+  padding-top: 16px;
+}
+
+.c-card__content-top {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-card__title {
+  color: global.$text-color-d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.c-card__favorite-before {
+    &.is-inactive{
+        display: none;
+    }
+}
+
+.c-card__favorite {
+}
+
+.c-card__favorite-after {
+  display: none;
+  &.is-active{
+    display: block;
+  }
+}
+
+.c-card__title-sub {
+  padding-top: 8px;
+  color: global.$text-color-m;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 18px */
+  padding-bottom: 16px;
+}
+
+.c-card__manager {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+}
+
+.c-card__manager + .c-card__manager {
+  padding-top: 5px;
+}
+
+.c-card__manager-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.c-card__manager-name {
+  position: relative;
+  padding-right: 20px;
+  color: global.$text-color-d;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.c-card__manager-color {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.c-card__content-body {
+  padding-top: 12px;
+  padding-bottom: 32px;
+  color: global.$text-color-m;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.c-card__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: global.$text-color-d;
+}
+
+.c-card__link-more {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 84px;
+    height: 1px;
+    background: #222;
+    bottom: -5px;
+    left: 0;
+  }
+}
+
+.c-card__link-page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.c-card__link-page {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 97px;
+    height: 1px;
+    background: #222;
+    bottom: -5px;
+    left: 0;
+  }
+}
