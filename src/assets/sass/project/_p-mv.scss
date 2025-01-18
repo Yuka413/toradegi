@@ -1,6 +1,7 @@
 @use "../global/" as global;
 
 .p-mv {
+  position: relative;
   padding-top: 86px;
   background: url(../img/mv-sp.png) no-repeat center center / cover;
   padding-bottom: 261px;
@@ -10,6 +11,11 @@
     padding-top: 163px;
     padding-bottom: 345px;
   }
+}
+
+.p-mv__gradation{
+  position: absolute;
+  bottom: -2px;
 }
 
 .p-mv__inner {

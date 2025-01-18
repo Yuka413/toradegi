@@ -7,6 +7,17 @@
   border-radius: 25px;
   padding-inline: 19px;
   padding-block: 30px;
+
+  &:hover {
+    .c-card__image {
+      img {
+        filter: brightness(70%);
+      }
+    }
+    .c-card__image-hover{
+      opacity: 1;
+    }
+  }
 }
 
 .c-card__inner {
@@ -30,6 +41,24 @@
 
 .c-card__image {
   padding-top: 16px;
+  position: relative;
+  img {
+    transition: filter 0.3s ease;
+  }
+}
+
+.c-card__image-hover {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  transition: opacity 0.3s ease;
 }
 
 .c-card__content-top {
@@ -48,9 +77,9 @@
 }
 
 .c-card__favorite-before {
-    &.is-inactive{
-        display: none;
-    }
+  &.is-inactive {
+    display: none;
+  }
 }
 
 .c-card__favorite {
@@ -58,7 +87,7 @@
 
 .c-card__favorite-after {
   display: none;
-  &.is-active{
+  &.is-active {
     display: block;
   }
 }
@@ -95,7 +124,7 @@
 
 .c-card__manager-name {
   position: relative;
-  padding-right: 20px;
+  padding-right: 38px;
   color: global.$text-color-d;
   font-size: 14px;
   font-weight: 700;
@@ -104,7 +133,18 @@
 
 .c-card__manager-color {
   position: absolute;
-  right: 0;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+
+.c-card__manager-color-secondary{
+  position: absolute;
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
   width: 15px;

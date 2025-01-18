@@ -15,12 +15,13 @@ $(".l-header__drawer-menu").on("click", function () {
 });
 // ドロワーメニュー開閉ここまで
 
-
 //  headerスクロールで切り替わるここから
 $(window).on("scroll", function () {
   const scrollY = $(this).scrollTop();
   if ($(window).scrollTop() > 50) {
     $(".l-header").css("background-color", "rgba(100, 100, 100, 0.7)");
+    $(".l-header__image path").css("fill", "#EBEBEB");
+    $(".l-header__drawer-bar").css("background-color", "#EBEBEB");
     $(".l-header-pc__menus").css("color", "#EBEBEB");
     $(".l-header-pc__menu--button").css({
       "background-color": "#EBEBEB",
@@ -29,6 +30,8 @@ $(window).on("scroll", function () {
     $(".l-header__logo-pc-svg path").css("fill", "#EBEBEB");
   } else {
     $(".l-header").css("background-color", "transparent");
+    $(".l-header__image path").css("fill", "#222");
+    $(".l-header__drawer-bar").css("background-color", "#222");
     $(".l-header-pc__menus").css("color", "#222");
     $(".l-header-pc__menu--button").css({
       "background-color": "#222",
@@ -39,14 +42,37 @@ $(window).on("scroll", function () {
 });
 // headerスクロールで切り替わるここまで
 
-
 // ハートクリック切り替えここから
-$('.c-card__favorite-before').on('click', function(){
-  $('.c-card__favorite-before').addClass('is-inactive');
-  $('.c-card__favorite-after').addClass('is-active');
-})
-$('.c-card__favorite-after').on('click', function(){
-  $('.c-card__favorite-before').removeClass('is-inactive');
-  $('.c-card__favorite-after').removeClass('is-active');
-})
+$(".c-card__favorite-before").on("click", function () {
+  $(".c-card__favorite-before").addClass("is-inactive");
+  $(".c-card__favorite-after").addClass("is-active");
+});
+$(".c-card__favorite-after").on("click", function () {
+  $(".c-card__favorite-before").removeClass("is-inactive");
+  $(".c-card__favorite-after").removeClass("is-active");
+});
 // ハートクリック切り替えここまで
+
+// Swiperここから
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  speed: 1000,
+  // autoplay:{
+  //   delay:1500,
+  // },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  }
+
+});

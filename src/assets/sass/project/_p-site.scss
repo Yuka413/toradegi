@@ -1,0 +1,40 @@
+@use "../global/" as global;
+
+.p-site {
+  background: #222;
+  height: 450px;
+}
+
+.p-site__inner {
+}
+
+.p-site__container {
+  width: 312px !important;
+}
+
+.p-site__swiper {
+  top: -200px;
+  padding-bottom: 60px !important;
+}
+
+
+
+
+.swiper-pagination-progressbar{
+background: #fff !important;
+width: 200px !important;
+left: 50% !important;
+transform: translateX(-50%) !important;
+@include global.mq("md"){
+width: 400px !important;
+}
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+  bottom: 0 !important;
+  top: auto !important;
+}
+
+.swiper-pagination-progressbar-fill{
+  background:#9F28FB !important;
+}
