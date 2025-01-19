@@ -64,8 +64,12 @@ const swiper = new Swiper(".swiper", {
   // autoplay:{
   //   delay:1500,
   // },
+  breakpoints: {
+    768: {
+      spaceBetween: 32,
+    },
+  },
 
-  // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
   },
@@ -73,6 +77,5 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
-  }
-
+  },
 });

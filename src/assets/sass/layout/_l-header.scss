@@ -7,15 +7,16 @@
   transition: background-color 0.5s ease;
   z-index: 500;
   @include global.mq("md") {
-    padding-block: 32px;
+    padding-block: 20px;
   }
 }
 
 .l-header__inner {
   padding-inline: 20px;
   @include global.mq("md") {
-    max-width: 1000px;
+    max-width: calc(1000px + 30px *2);
     margin: 0 auto;
+    padding-inline: 30px;
   }
 }
 
@@ -37,7 +38,7 @@ transition: fill 0.3s ease;
 
 .l-header__drawer {
   width: 48px;
-  height: 25px;
+  height: 31px;
   flex-shrink: 0;
   position: relative;
   z-index: 200;
@@ -193,7 +194,7 @@ transition: fill 0.3s ease;
   align-items: center;
   transition: color 0.3s ease;
   @include global.mq("lg"){
-    gap: 30px;
+    gap: 31px;
   }
 }
 

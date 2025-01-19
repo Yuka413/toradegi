@@ -20,8 +20,12 @@
 
 .p-mv__inner {
   padding-inline: 19px;
-  max-width: 1000px;
+  max-width: calc(1000px + 30px * 2);
   margin: 0 auto;
+
+  @include global.mq("md"){
+    padding-inline: 30px;
+  }
 }
 
 .p-mv__top-text {
@@ -61,5 +65,6 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.65;
+    letter-spacing: 1px;
   }
 }

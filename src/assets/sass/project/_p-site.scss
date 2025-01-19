@@ -2,7 +2,7 @@
 
 .p-site {
   background: #222;
-  height: 450px;
+  height: 443px;
 }
 
 .p-site__inner {
@@ -13,8 +13,14 @@
 }
 
 .p-site__swiper {
-  top: -200px;
-  padding-bottom: 60px !important;
+  top: -207px;
+  padding-bottom: 46px !important;
+
+  @include global.mq("md"){
+    top: -222px;
+    padding-bottom: 67px !important;
+
+  }
 }
 
 
@@ -28,6 +34,10 @@ transform: translateX(-50%) !important;
 @include global.mq("md"){
 width: 400px !important;
 }
+}
+
+.p-site__swiper-pagination{
+  height: 2px !important;
 }
 
 .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
