@@ -1,6 +1,7 @@
 @use "../global/" as global;
 
 .c-card {
+  break-inside:avoid; 
   display: inline-block;
   width: 312px;
   background: #ebebeb;
@@ -19,6 +20,7 @@
       opacity: 1;
     }
   }
+
 }
 
 .c-card__inner {

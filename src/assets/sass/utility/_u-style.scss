@@ -6,4 +6,10 @@
   }
 }
 
+.u-sp__hidden{
+  display: none;
+  @include global.mq("md"){
+    display: block;
+  }
+}
 

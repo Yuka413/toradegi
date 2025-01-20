@@ -1,0 +1,158 @@
+@use "../global/" as global;
+
+.p-works {
+  background: #222;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.p-works__inner {
+  padding-inline: 20px;
+}
+
+.p-works__title {
+  text-align: center;
+  color: global.$text-color-l;
+}
+
+.p-works__title-main {
+}
+
+.p-works__title-sub {
+  padding-top: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.p-works__narrow-sp {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  @include global.mq("md") {
+    display: none;
+  }
+}
+
+.p-works__narrow-pc {
+  display: none;
+  @include global.mq("md") {
+    display: block;
+    padding-top: 67px;
+  }
+}
+
+.p-works__narrow-pc-button {
+  max-width: 810px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  color: global.$text-color-l;
+  display: flex;
+  @include global.mq("lg") {
+    max-width: 900px;
+  }
+}
+
+.p-works__narrow-pc-category {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 14px;
+  padding: 13px 30px;
+  border-radius: 20px;
+
+  @include global.mq("lg") {
+    padding: 13px 40px;
+  }
+}
+
+.p-works__narrow-pc-tag {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 14px;
+  padding: 13px 25px;
+  border-radius: 20px;
+  background: #727272;
+}
+
+.p-works__narrow-pc-search {
+  padding-top: 67px;
+  display: flex;
+  justify-content: center;
+}
+
+.p-works__search-text {
+  padding: 13px 40px;
+  color: global.$text-color-l;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-radius: 20px;
+  background: #9f28fb;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.p-works__narrow-sp-button {
+  width: 250px;
+  color: global.$text-color-l;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  padding: 16px 26px 16px 66px;
+  border-radius: 25px;
+  background: #9f28fb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.p-works__cards {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .c-card{
+    margin-bottom: 32px;
+  }
+
+  @include global.mq("md") {
+    display: block;
+    column-count: 2;
+    column-gap: 32px;
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
+  @include global.mq("xl") {
+    column-count: 3;
+    max-width: 1000px;
+  }
+}
+
+.p-works__more-button {
+  padding-top: 44px;
+  display: flex;
+  justify-content: center;
+}
+
+.p-works__more-button-text {
+  background-color: #222;
+  width: fit-content;
+  padding: 17px 86px 17px 85px;
+  color: global.$text-color-l;
+  border: 1px solid currentColor;
+  border-radius: 30px;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}

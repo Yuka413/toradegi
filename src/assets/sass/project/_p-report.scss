@@ -35,7 +35,7 @@
   svg {
     width: 182px;
     height: 238px;
-    @include global.mq("md") {
+    @include global.mq("lg") {
       width: 346px;
       height: 452px;
     }
@@ -50,9 +50,13 @@
   line-height: 1.9;
   @include global.mq("md") {
     max-width: 401px;
-    padding-top: 243px;
+    padding-top: 150px;
     font-size: 18px;
     line-height: 2.1;
+  }
+  @include global.mq("lg"){
+    padding-top: 243px;
+
   }
 }
 

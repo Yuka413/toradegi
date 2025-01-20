@@ -44,12 +44,13 @@ $(window).on("scroll", function () {
 
 // ハートクリック切り替えここから
 $(".c-card__favorite-before").on("click", function () {
-  $(".c-card__favorite-before").addClass("is-inactive");
-  $(".c-card__favorite-after").addClass("is-active");
+  $(this).addClass("is-inactive"); 
+  $(this).siblings(".c-card__favorite-after").addClass("is-active"); 
 });
+
 $(".c-card__favorite-after").on("click", function () {
-  $(".c-card__favorite-before").removeClass("is-inactive");
-  $(".c-card__favorite-after").removeClass("is-active");
+  $(this).removeClass("is-active"); // クリックされた要素のみを非アクティブにする
+  $(this).siblings(".c-card__favorite-before").removeClass("is-inactive"); 
 });
 // ハートクリック切り替えここまで
 
