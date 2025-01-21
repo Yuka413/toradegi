@@ -87,6 +87,7 @@ q {
 }
 
 body {
+	color: #222;
 	font-family: "Noto Sans JP", serif;
 }
 
@@ -667,6 +668,78 @@ body {
 
 .p-works__more-button-text:hover {
 	opacity: 0.7;
+}
+
+.p-info {
+	background: url(../img/info-bg.png) no-repeat center center/contain;
+	background-color: #ebebeb;
+	padding-bottom: 72px;
+	padding-top: 53px;
+}
+
+.p-info__inner {
+	padding-inline: 60px;
+	text-align: center;
+}
+
+.p-info__top-first {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.65;
+}
+
+.p-info__top-second {
+	align-items: end;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	justify-content: center;
+	padding-top: 12px;
+}
+
+.p-info__top-second span {
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 1.65;
+}
+
+.p-info__top-third {
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.65;
+	padding-top: 26px;
+}
+
+.p-info__merits {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding-bottom: 56px;
+	padding-top: 39px;
+}
+
+.p-info__merit {
+	background: #fff;
+	border-radius: 10px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.65;
+	padding: 12px 32px;
+}
+
+.p-info__button-text {
+	background: #9f28fb;
+	border-radius: 30px;
+	color: #ebebeb;
+	display: inline-block;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1;
+	padding: 17px 63px 18px 64px;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .u-color__design {

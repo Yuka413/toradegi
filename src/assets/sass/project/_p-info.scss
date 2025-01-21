@@ -1,0 +1,104 @@
+@use "../global/" as global;
+
+.p-info {
+  padding-top: 53px;
+  padding-bottom: 72px;
+  background-color: #ebebeb;
+  background: url(../img/info-bg.png) no-repeat center center / contain;
+}
+
+.p-info__inner {
+  padding-inline: 60px;
+  text-align: center;
+}
+
+.p-info__top {
+}
+
+.p-info__top-first {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.p-info__top-second {
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 12px;
+  flex-direction: row;
+  span {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.65;
+  }
+}
+
+.p-info__top-third {
+  padding-top: 26px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.p-info__merits {
+  padding-top: 39px;
+  padding-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.p-info__merit {
+  padding: 12px 32px;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.p-info__button-text {
+  display: inline-block;
+  color: global.$text-color-l;
+  border-radius: 30px;
+  background: #9f28fb;
+  padding: 17px 63px 18px 64px;
+  width: fit-content;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.p-info__course {
+}
+
+.p-info__course-right {
+}
+
+.p-info__course-standard {
+}
+
+.p-info__course-standard-title {
+}
+
+.p-info__course-standard-lists {
+}
+
+.p-info__course-standard-list {
+}
+
+.p-info__course-advance {
+}
+
+.p-info__course-advance-title {
+}
+
+.p-info__course-advance-lists {
+}
+
+.p-info__course-advance-list {
+}
