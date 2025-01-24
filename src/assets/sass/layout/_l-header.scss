@@ -14,7 +14,7 @@
 .l-header__inner {
   padding-inline: 20px;
   @include global.mq("md") {
-    max-width: calc(1000px + 30px *2);
+    max-width: calc(1000px + 30px * 2);
     margin: 0 auto;
     padding-inline: 30px;
   }
@@ -31,8 +31,8 @@
 }
 
 .l-header__image {
-  path{
-transition: fill 0.3s ease;
+  path {
+    transition: fill 0.3s ease;
   }
 }
 
@@ -90,6 +90,28 @@ transition: fill 0.3s ease;
 }
 
 .l-header__drawer-menu {
+  width: fit-content;
+  padding-bottom: 5px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: global.$text-color-l;
+    bottom: 0;
+    transform: scale(0, 1);
+    transform-origin: left center;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1, 1);
+    }
+  }
 }
 
 .l-header__drawer-bar {
@@ -174,17 +196,15 @@ transition: fill 0.3s ease;
 }
 
 .l-header__logo-pc {
-
 }
 
-.l-header__logo-pc-svg{
-    path{
-        transition: fill 0.3s ease;
-    }
+.l-header__logo-pc-svg {
+  path {
+    transition: fill 0.3s ease;
+  }
 }
 
 .l-header-pc__menus {
-  color: global.$text-color-d;
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
@@ -193,12 +213,38 @@ transition: fill 0.3s ease;
   gap: 15px;
   align-items: center;
   transition: color 0.3s ease;
-  @include global.mq("lg"){
+  @include global.mq("lg") {
     gap: 31px;
   }
 }
 
 .l-header-pc__menu {
+  color: global.$text-color-d;
+  padding-block: 5px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background: #222;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    transform-origin: left center;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1, 1);
+    }
+  }
+  &.is-scroll{
+    &::after{
+      background: #ebebeb;
+    }
+  }
 }
 
 .l-header-pc__menu--button {
@@ -210,9 +256,8 @@ transition: fill 0.3s ease;
   line-height: 1;
   padding: 11px 18px 12px 18px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  @include global.mq("lg"){
+  @include global.mq("lg") {
     padding: 11px 41px 12px 42px;
-
   }
 }
 

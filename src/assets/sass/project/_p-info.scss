@@ -92,6 +92,13 @@
   line-height: 1.65;
 }
 
+.p-info__button{
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
 .p-info__button-text {
   display: inline-block;
   color: global.$text-color-l;

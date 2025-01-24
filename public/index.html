@@ -167,7 +167,7 @@
             <a href="" class="l-header-pc__menu">コーディング</a>
             <a href="" class="l-header-pc__menu">動画</a>
             <a href="" class="l-header-pc__menu">ライティング</a>
-            <a href="" class="l-header-pc__menu l-header-pc__menu--button"
+            <a href="" class="l-header-pc__menu--button"
               >トラデジとは？</a
             >
           </div>
@@ -1195,7 +1195,7 @@
     <div class="p-report">
       <div class="p-report__inner">
         <div class="p-report__container">
-          <div class="p-report__title">
+          <div class="p-report__title js-typing">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 182 238"
@@ -1406,7 +1406,7 @@
           <p class="p-works__title-sub">作品一覧</p>
         </div>
         <div class="p-works__narrow-sp">
-          <button class="p-works__narrow-sp-button">
+          <button class="p-works__narrow-sp-button p-works__narrow-category">
             カテゴリー
             <div class="p-works__narrow-sp-arrow">
               <svg
@@ -1424,7 +1424,7 @@
               </svg>
             </div>
           </button>
-          <button class="p-works__narrow-sp-button">
+          <button class="p-works__narrow-sp-button p-works__narrow-detail">
             詳細絞り込み
             <div class="p-works__narrow-sp-arrow">
               <svg
@@ -1443,35 +1443,67 @@
             </div>
           </button>
         </div>
+        <div class="p-works__modal p-works__modal-category js-modal">
+          <div class="p-works__modal-top">
+            <button class="p-works__modal-batu">
+              <span class="p-works__modal-batu-bar"></span>
+              <span class="p-works__modal-batu-bar"></span>
+            </button>
+          </div>
+          <div class="p-works__modal-body-category">
+            <button class="p-works__modal-select u-color__all">すべて</button>
+            <button class="p-works__modal-select">デザイン</button>
+            <button class="p-works__modal-select">コーディング</button>
+            <button class="p-works__modal-select">動画</button>
+            <button class="p-works__modal-select">ライティング</button>
+          </div>
+        </div>
+        <div class="p-works__modal p-works__modal-detail js-modal">
+          <div class="p-works__modal-top">
+            <button class="p-works__modal-batu">
+              <span class="p-works__modal-batu-bar"></span>
+              <span class="p-works__modal-batu-bar"></span>
+            </button>
+          </div>
+          <div class="p-works__modal-body-detail">
+            <button class="p-works__modal-select js-modal__detail">＃LP</button>
+            <button class="p-works__modal-select js-modal__detail">＃Webサイト</button>
+            <button class="p-works__modal-select js-modal__detail">＃UI/UX</button>
+            <button class="p-works__modal-select js-modal__detail">＃WordPress</button>
+            <button class="p-works__modal-select js-modal__detail">＃HTML/CSS</button>
+            <button class="p-works__modal-select js-modal__detail">＃STUDIO</button>
+            <button class="p-works__modal-select js-modal__detail">＃アプリ</button>
+            <button class="p-works__modal-select js-modal__detail">＃LINE</button>
+            <button class="p-works__modal-select js-modal__detail">＃ECサイト</button>
+            <button class="p-works__modal-select js-modal__detail">＃Shopify</button>
+            <button class="p-works__modal-select js-modal__detail">＃ドローン</button>
+            <button class="p-works__modal-select js-modal__detail">＃SEO</button>
+          </div>
+        </div>
         <div class="p-works__narrow-pc">
           <div class="p-works__narrow-pc-button">
-            <a href="" class="p-works__narrow-pc-category u-color__all"
-              >すべて</a
-            >
-            <a href="" class="p-works__narrow-pc-category u-color__cording"
-              >コーディング</a
-            >
-            <a href="" class="p-works__narrow-pc-category u-color__design"
-              >デザイン</a
-            >
-            <a href="" class="p-works__narrow-pc-category u-color__movie"
-              >動画</a
-            >
-            <a href="" class="p-works__narrow-pc-category u-color__writing"
-              >ライティング</a
-            >
-            <a href="" class="p-works__narrow-pc-tag">＃LP</a>
-            <a href="" class="p-works__narrow-pc-tag">＃Webサイト</a>
-            <a href="" class="p-works__narrow-pc-tag">＃UI/UX</a>
-            <a href="" class="p-works__narrow-pc-tag">＃WordPress</a>
-            <a href="" class="p-works__narrow-pc-tag">＃HTML/CSS</a>
-            <a href="" class="p-works__narrow-pc-tag">＃STUDIO</a>
-            <a href="" class="p-works__narrow-pc-tag">＃アプリ</a>
-            <a href="" class="p-works__narrow-pc-tag">＃LINE</a>
-            <a href="" class="p-works__narrow-pc-tag">＃ECサイト</a>
-            <a href="" class="p-works__narrow-pc-tag">＃Shopify</a>
-            <a href="" class="p-works__narrow-pc-tag">＃ドローン</a>
-            <a href="" class="p-works__narrow-pc-tag">＃SEO</a>
+            <button class="p-works__narrow-pc-category u-color__all"
+              >すべて</button>
+            <button class="p-works__narrow-pc-category"
+              >コーディング</button>
+            <button class="p-works__narrow-pc-category"
+              >デザイン</button>
+            <button class="p-works__narrow-pc-category"
+            >動画</button>
+            <button class="p-works__narrow-pc-category"
+              >ライティング</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃LP</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃Webサイト</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃UI/UX</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃WordPress</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃HTML/CSS</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃STUDIO</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃アプリ</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃LINE</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃ECサイト</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃Shopify</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃ドローン</button>
+            <button class="p-works__narrow-pc-tag js-works__narrow-tag">＃SEO</button>
           </div>
           <div class="p-works__narrow-pc-search">
             <button class="p-works__search-text">
@@ -2583,7 +2615,6 @@
               >
                 <path
                   d="M39.2857 0H4.71429C2.11161 0 0 2.11161 0 4.71429V39.2857C0 41.8884 2.11161 44 4.71429 44H39.2857C41.8884 44 44 41.8884 44 39.2857V4.71429C44 2.11161 41.8884 0 39.2857 0ZM34.483 15.5964C34.5027 15.8714 34.5027 16.1562 34.5027 16.4312C34.5027 24.9464 28.0205 34.758 16.1759 34.758C12.5223 34.758 9.13393 33.6973 6.28571 31.8705C6.80625 31.9295 7.30714 31.9491 7.8375 31.9491C10.8527 31.9491 13.6223 30.9277 15.8321 29.1991C13.0036 29.1402 10.6268 27.2839 9.81161 24.7304C10.8036 24.8777 11.6973 24.8777 12.7188 24.6125C9.77232 24.0134 7.5625 21.4205 7.5625 18.2875V18.2089C8.41696 18.6902 9.41875 18.9848 10.4696 19.0241C9.58613 18.4364 8.86186 17.6392 8.36144 16.7035C7.86103 15.7678 7.60005 14.7227 7.60179 13.6616C7.60179 12.4634 7.91607 11.3634 8.47589 10.4107C11.6482 14.3196 16.4116 16.8732 21.7545 17.1482C20.8411 12.7777 24.1116 9.23214 28.0402 9.23214C29.8964 9.23214 31.5661 10.008 32.7446 11.2652C34.1982 10.9902 35.5929 10.45 36.8304 9.71339C36.3491 11.2062 35.3375 12.4634 34.0018 13.2589C35.2982 13.1214 36.5554 12.758 37.7143 12.2571C36.8402 13.5437 35.7402 14.683 34.483 15.5964Z"
-                  fill="#EBEBEB"
                 />
               </svg>
               <svg
@@ -2595,21 +2626,26 @@
               >
                 <path
                   d="M21.999 14.6771C17.9449 14.6771 14.6765 17.9771 14.6765 22C14.6765 26.0229 17.9763 29.3229 21.999 29.3229C26.0217 29.3229 29.3215 26.0229 29.3215 22C29.3215 17.9771 26.0217 14.6771 21.999 14.6771ZM43.998 22C43.998 18.9514 43.998 15.9657 43.8409 12.9171C43.6838 9.39714 42.8667 6.25429 40.2896 3.70857C37.7126 1.13143 34.6013 0.314286 31.0815 0.157143C28.033 -1.52205e-07 25.0475 0 21.999 0C18.9506 0 15.965 -1.52205e-07 12.9166 0.157143C9.39672 0.314286 6.25401 1.13143 3.70841 3.70857C1.13138 6.28571 0.314272 9.39714 0.157136 12.9171C-1.52198e-07 15.9657 0 18.9514 0 22C0 25.0486 -1.52198e-07 28.0343 0.157136 31.0829C0.314272 34.6029 1.13138 37.7457 3.70841 40.2914C6.28543 42.8686 9.39672 43.6857 12.9166 43.8429C15.965 44 18.9506 44 21.999 44C25.0475 44 28.033 44 31.0815 43.8429C34.6013 43.6857 37.744 42.8686 40.2896 40.2914C42.8667 37.7143 43.6838 34.6029 43.8409 31.0829C44.0295 28.0657 43.998 25.0486 43.998 22ZM21.999 33.2829C15.745 33.2829 10.7167 28.2543 10.7167 22C10.7167 15.7457 15.745 10.7171 21.999 10.7171C28.253 10.7171 33.2814 15.7457 33.2814 22C33.2814 28.2543 28.253 33.2829 21.999 33.2829ZM33.7528 12.8857C32.3071 12.8857 31.1129 11.7229 31.1129 10.2457C31.1129 8.76857 32.2757 7.60571 33.7528 7.60571C35.2299 7.60571 36.3927 8.76857 36.3927 10.2457C36.4006 10.59 36.3378 10.9322 36.208 11.2512C36.0783 11.5701 35.8844 11.859 35.6384 12.1C35.3975 12.346 35.1086 12.5399 34.7896 12.6696C34.4707 12.7994 34.1284 12.8622 33.7842 12.8543L33.7528 12.8857Z"
-                  fill="#EBEBEB"
                 />
               </svg>
             </div>
           </div>
           <div class="l-footer__second">
             <nav class="l-footer__second-nav">
-              <a href="" class="l-footer__second-nav-list">プライバシーポリシー</a>
-              <a href="" class="l-footer__second-nav-list">特定商取引法に基づく表記</a>
+              <a href="" class="l-footer__second-nav-list"
+                >プライバシーポリシー</a
+              >
+              <a href="" class="l-footer__second-nav-list"
+                >特定商取引法に基づく表記</a
+              >
               <a href="" class="l-footer__second-nav-list">運営会社について</a>
               <a href="" class="l-footer__second-nav-list">利用規約</a>
               <a href="" class="l-footer__second-nav-list">お問い合わせ</a>
             </nav>
             <div class="l-footer__second-notes">
-              <p class="l-footer__second-notes-text">＊このサイトは株式会社デイトラ様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません</p>
+              <p class="l-footer__second-notes-text">
+                ＊このサイトは株式会社デイトラ様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません
+              </p>
             </div>
           </div>
         </div>
