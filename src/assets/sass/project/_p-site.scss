@@ -16,35 +16,39 @@
   top: -207px;
   padding-bottom: 46px !important;
 
-  @include global.mq("md"){
+  @include global.mq("md") {
     top: -222px;
     padding-bottom: 67px !important;
-
   }
 }
 
-
-
-
-.swiper-pagination-progressbar{
-background: #fff !important;
-width: 200px !important;
-left: 50% !important;
-transform: translateX(-50%) !important;
-@include global.mq("md"){
-width: 400px !important;
-}
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 
-.p-site__swiper-pagination{
+.swiper-pagination-progressbar {
+  background: #fff !important;
+  width: 200px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  @include global.mq("md") {
+    width: 400px !important;
+  }
+}
+
+.p-site__swiper-pagination {
   height: 2px !important;
 }
 
-.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical
+  > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   bottom: 0 !important;
   top: auto !important;
 }
 
-.swiper-pagination-progressbar-fill{
-  background:#9F28FB !important;
+.swiper-pagination-progressbar-fill {
+  background: #9f28fb !important;
 }

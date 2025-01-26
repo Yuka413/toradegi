@@ -63,10 +63,11 @@ const swiper = new Swiper(".swiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   spaceBetween: 24,
-  speed: 1000,
-  // autoplay:{
-  //   delay:1500,
-  // },
+  speed: 6000,
+  followFinger: false,
+  autoplay: {
+    delay: 0,
+  },
   breakpoints: {
     768: {
       spaceBetween: 32,
@@ -119,9 +120,9 @@ $(".js-modal__detail").on("click", function () {
   $(this).toggleClass("is-active");
 });
 
-$('.js-works__narrow-tag').on('click', function(){
-  $(this).toggleClass('is-active');
-})
+$(".js-works__narrow-tag").on("click", function () {
+  $(this).toggleClass("is-active");
+});
 
 $(".p-works__narrow-pc-category").click(function () {
   const index = $(".p-works__narrow-pc-category").index(this);
@@ -142,3 +143,26 @@ $(".p-works__narrow-pc-category").click(function () {
   }
 });
 
+const intersectionObserver = new IntersectionObserver(function (
+  entries,
+  observer
+) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-in-view");
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+const inViewItems = document.querySelectorAll(".fade-in-up");
+inViewItems.forEach(function (inViewItem) {
+  intersectionObserver.observe(inViewItem);
+});
+
+// ページトップへ戻る
+$(document).ready(function () {
+  $(".js-page-top").on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, {behavior : "smooth"});
+  });
+});

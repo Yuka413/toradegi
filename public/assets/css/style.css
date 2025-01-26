@@ -91,6 +91,17 @@ body {
 	font-family: "Noto Sans JP", serif;
 }
 
+.fade-in-up {
+	opacity: 0;
+	transform: translateY(24px);
+	transition: opacity 1s, transform 1s;
+}
+
+.fade-in-up.is-in-view {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 .l-header {
 	padding-block: 25px;
 	position: fixed;
@@ -617,6 +628,10 @@ body {
 	top: -207px;
 }
 
+.swiper-wrapper {
+	transition-timing-function: linear !important;
+}
+
 .swiper-pagination-progressbar {
 	background: #fff !important;
 	left: 50% !important;
@@ -637,7 +652,7 @@ body {
 }
 
 .swiper-pagination-progressbar-fill {
-	background: #9F28FB !important;
+	background: #9f28fb !important;
 }
 
 .p-report {

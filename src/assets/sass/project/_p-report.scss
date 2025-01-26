@@ -5,7 +5,7 @@
   padding-bottom: 50px;
   background: #222;
 
-  @include global.mq("md"){
+  @include global.mq("md") {
     padding-top: 100px;
   }
 }
@@ -28,7 +28,6 @@
     padding-right: 36px;
     padding-left: 37px;
   }
-
 }
 
 .p-report__title {
@@ -54,9 +53,8 @@
     font-size: 18px;
     line-height: 2.1;
   }
-  @include global.mq("lg"){
+  @include global.mq("lg") {
     padding-top: 243px;
-
   }
 }
 
@@ -65,7 +63,9 @@
 
 .p-report__description-text + .p-report__description-text {
   padding-top: 17px;
-  @include global.mq("md"){
+  @include global.mq("md") {
     padding-top: 18px;
   }
 }
+
+

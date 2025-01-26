@@ -4,3 +4,14 @@ body {
   font-family: "Noto Sans JP", serif;
   color: global.$text-color-d;
 }
+
+.fade-in-up{
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1s, transform 1s;
+
+  &.is-in-view{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
