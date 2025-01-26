@@ -21,8 +21,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 245px;
+    gap: 100px;
   }
+
+@include global.mq("lg"){
+  gap: 245px;
+
+}
 }
 
 .l-footer__first {

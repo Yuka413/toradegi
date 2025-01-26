@@ -916,6 +916,8 @@ body {
 	flex-wrap: wrap;
 	gap: 32px;
 	justify-content: center;
+	margin: 0 auto;
+	max-width: 400px;
 	padding-top: 31px;
 }
 
@@ -1194,7 +1196,7 @@ body {
 .l-footer__container {
 	display: flex;
 	flex-direction: row;
-	gap: 245px;
+	gap: 100px;
 	justify-content: space-between;
 }
 
@@ -1372,6 +1374,10 @@ body {
 
 .l-header-pc__menu--button {
 	padding: 11px 41px 12px 42px;
+}
+
+.l-footer__container {
+	gap: 245px;
 }
 
 .p-report__title svg {

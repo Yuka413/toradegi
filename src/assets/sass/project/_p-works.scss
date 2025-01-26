@@ -260,6 +260,8 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
+  max-width: 400px;
+  margin: 0 auto;
   .p-works__modal-select {
     padding: 13px 25px;
   }
